@@ -5,7 +5,7 @@ class ApplicationController < ActionController::Base
 
   private
 
-  # The logs you got are writeen to  "/var/log/access.log"
+  # The logs you got are written to  "/var/log/access.log"
   def access_logger
     Rails.application.config.another_logger.info("#{request.method} '#{request.path}' #{request.version} from: #{request.remote_ip}")
   end
